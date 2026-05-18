@@ -70,6 +70,9 @@ src
 │   ├── ModalPublicacion.jsx
 │   ├── ModalPublicacion.css
 │   │
+│   ├── Historias.jsx
+│   ├── Historias.css
+│   │
 │   ├── Perfil.jsx
 │   └── Perfil.css
 │

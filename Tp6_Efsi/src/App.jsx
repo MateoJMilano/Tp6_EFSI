@@ -10,6 +10,7 @@ import Perfil from "./componentes/Perfil";
 import { getCats } from "./servicios/catApi";
 
 import usuario from "./datos/usuario";
+import Historias from "./componentes/Historias";
 
 function App() {
   const [publicaciones, setPublicaciones] = useState([]);
@@ -52,11 +53,15 @@ function App() {
       <Encabezado setVista={setVista} />
 
       {vista === "feed" ? (
-        <Feed
-          publicaciones={publicaciones}
-          abrirPublicacion={abrirPublicacion}
-        />
-      ) : (
+  <>
+    <Historias />
+
+    <Feed
+      publicaciones={publicaciones}
+      abrirPublicacion={abrirPublicacion}
+    />
+  </>
+) : (
         <Perfil
           usuario={usuario}
           publicaciones={publicaciones}

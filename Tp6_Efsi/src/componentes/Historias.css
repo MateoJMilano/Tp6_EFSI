@@ -1,0 +1,82 @@
+.historias {
+  width: 100%;
+
+  max-width: 600px;
+
+  margin: 30px auto;
+
+  background-color: white;
+
+  border: 1px solid #dbdbdb;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  display: flex;
+
+  gap: 18px;
+
+  overflow-x: auto;
+}
+
+.historias::-webkit-scrollbar {
+  display: none;
+}
+
+.historia {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  cursor: pointer;
+
+  min-width: 70px;
+}
+
+.historia-borde {
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 3px;
+}
+
+.historia-borde img {
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 50%;
+
+  border: 3px solid white;
+
+  object-fit: cover;
+}
+
+.historia p {
+  margin-top: 8px;
+
+  font-size: 12px;
+
+  text-align: center;
+}
