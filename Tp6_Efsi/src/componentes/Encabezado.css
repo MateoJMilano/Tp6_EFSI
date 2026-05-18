@@ -27,6 +27,15 @@
 
   font-weight: bold;
 }
+.logo {
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
 
 .encabezado nav {
   display: flex;

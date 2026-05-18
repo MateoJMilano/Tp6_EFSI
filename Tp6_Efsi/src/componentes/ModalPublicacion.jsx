@@ -13,50 +13,105 @@ function ModalPublicacion({
       onClick={cerrarModal}
     >
       <div
-        className="modal-content"
+        className="modal-instagram"
         onClick={(e) =>
           e.stopPropagation()
         }
       >
-        <img
-          src={publicacionSeleccionada.url}
-          alt=""
-        />
+        <div className="modal-imagen-container">
+          <img
+            src={publicacionSeleccionada.url}
+            alt=""
+            className="modal-imagen"
+          />
+        </div>
 
-        <div className="modal-info">
-          <h2>catlover</h2>
+        <div className="modal-derecha">
+          <div className="modal-header">
+            <div className="usuario-info">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                alt=""
+              />
 
-          <p>
-            {
-              publicacionSeleccionada.caption
-            }
-          </p>
+              <div>
+                <h4>catlover</h4>
+                <p>Argentina</p>
+              </div>
+            </div>
 
-          <p>
-            {
-              publicacionSeleccionada.likes
-            }{" "}
-            likes
-          </p>
-
-          <div className="comentarios">
-            <p>
-              <strong>juan:</strong>{" "}
-              hermoso gato
-            </p>
-
-            <p>
-              <strong>maria:</strong>{" "}
-              😍😍😍
-            </p>
+            <button
+              className="cerrar-btn"
+              onClick={cerrarModal}
+            >
+              ×
+            </button>
           </div>
-          <button className="like-btn">
-  ❤️ Me gusta
-</button>
 
-          <button onClick={cerrarModal}>
-            Cerrar
-          </button>
+          <div className="modal-caption">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+              alt=""
+            />
+
+            <div>
+              <p>
+                <strong>catlover</strong>{" "}
+                {
+                  publicacionSeleccionada.caption
+                }
+              </p>
+
+              <span>Hace 3 días</span>
+            </div>
+          </div>
+
+          <div className="modal-comentarios">
+            <div className="comentario">
+              <strong>juan</strong>
+              <p>Hermoso gato 😍</p>
+            </div>
+
+            <div className="comentario">
+              <strong>maria</strong>
+              <p>Necesito adoptarlo</p>
+            </div>
+
+            <div className="comentario">
+              <strong>lucas</strong>
+              <p>Muy tierna la foto 🐱</p>
+            </div>
+          </div>
+
+          <div className="modal-actions">
+            <div className="iconos">
+              <span>🤍</span>
+              <span>💬</span>
+              <span>📤</span>
+            </div>
+
+            <span>🔖</span>
+          </div>
+
+          <div className="modal-likes">
+            <strong>
+              {
+                publicacionSeleccionada.likes
+              }{" "}
+              likes
+            </strong>
+
+            <p>Hace 3 días</p>
+          </div>
+
+          <div className="modal-input">
+            <input
+              type="text"
+              placeholder="Agrega un comentario..."
+            />
+
+            <button>Publicar</button>
+          </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,12 @@ import "./Encabezado.css";
 function Encabezado({ setVista }) {
   return (
     <header className="encabezado">
-      <h1>Catstagram</h1>
+      <h1
+        className="logo"
+        onClick={() => setVista("feed")}
+      >
+        Catstagram
+      </h1>
 
       <nav>
         <button

@@ -83,3 +83,8 @@ src
 ├── App.css
 ├── main.jsx
 └── index.css
+```
+
+# Figma de referencia
+
+https://www.figma.com/es-es/comunidad/file/1235135369163092252/instagram-web-ui-recreated
