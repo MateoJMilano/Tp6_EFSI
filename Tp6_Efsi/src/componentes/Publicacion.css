@@ -1,0 +1,77 @@
+.publicacion {
+  background-color: white;
+
+  border: 1px solid #dbdbdb;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.publicacion-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px;
+}
+
+.publicacion-header img {
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.publicacion-header span {
+  font-weight: bold;
+}
+
+.publicacion-img {
+  width: 100%;
+
+  height: 500px;
+
+  object-fit: cover;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.publicacion-actions {
+  padding: 10px 15px;
+}
+
+.publicacion-actions button {
+  border: none;
+
+  background: none;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.publicacion-actions button:hover {
+  transform: scale(1.1);
+}
+
+.likes {
+  padding: 0 15px;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.caption {
+  padding: 0 15px 15px;
+}

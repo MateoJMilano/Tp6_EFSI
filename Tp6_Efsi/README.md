@@ -1,16 +1,85 @@
-# React + Vite
+# Catstagram - Clon de Instagram con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del proyecto
 
-Currently, two official plugins are available:
+Catstagram es una aplicación web desarrollada con React inspirada en la interfaz visual de Instagram.  
+El proyecto consume imágenes de gatos desde una API externa y las muestra en formato de publicaciones dentro de un feed dinámico similar al de una red social moderna.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La aplicación permite:
+- visualizar publicaciones,
+- interactuar mediante likes,
+- abrir publicaciones individualmente,
+- navegar entre el feed y un perfil de usuario emulado.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- Axios
+- CSS
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# API utilizada
+
+Se utilizó:
+
+## The Cat API
+
+:contentReference[oaicite:0]{index=0}
+
+La API se utiliza para obtener imágenes de gatos dinámicamente mediante peticiones HTTP realizadas con Axios.
+
+---
+
+# Diseño de referencia utilizado
+
+El diseño del proyecto fue inspirado en el siguiente diseño de Figma:
+
+:contentReference[oaicite:1]{index=1}
+
+La aplicación intenta mantener una estructura visual similar a Instagram:
+- feed central,
+- publicaciones tipo tarjeta,
+- perfil de usuario,
+- modal de publicaciones,
+- diseño minimalista y moderno.
+
+---
+
+# Estructura del proyecto
+
+```txt
+src
+│
+├── assets
+│
+├── componentes
+│   ├── Encabezado.jsx
+│   ├── Encabezado.css
+│   │
+│   ├── Feed.jsx
+│   ├── Feed.css
+│   │
+│   ├── Publicacion.jsx
+│   ├── Publicacion.css
+│   │
+│   ├── ModalPublicacion.jsx
+│   ├── ModalPublicacion.css
+│   │
+│   ├── Perfil.jsx
+│   └── Perfil.css
+│
+├── datos
+│   └── usuario.js
+│
+├── servicios
+│   └── catApi.js
+│
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
